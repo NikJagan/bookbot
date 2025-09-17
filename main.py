@@ -18,3 +18,7 @@ print("============ BOOKBOT ============")
 print("Analyzing book found at books/frankenstein.txt...")
 print("----------- Word Count ----------")
 print(word_count)
+print("--------- Character Count -------")
+for item in sorted_chars:
+    print(f"{item["char"]}: {item["num"]}")
+print("============= END ===============")
