@@ -6,10 +6,15 @@ def get_book_text(path_to_file):
     return file_contents
 
 def main(x):
-    y = get_book_text(x)
-    z = num_of_words(y)
-    a = num_of_characters(y)
+    text = get_book_text(x)
+    word_count = num_of_words(text)
+    x = num_of_characters(text)
+    sorted_chars = char_num_split(x)
+    return word_count, sorted_chars
 
-main("/home/neonik21/workspace/github.com/NikJagan/bookbot/books/frankenstein.txt")
+word_count, sorted_chars = main("/home/neonik21/workspace/github.com/NikJagan/bookbot/books/frankenstein.txt")
 
-
+print("============ BOOKBOT ============")
+print("Analyzing book found at books/frankenstein.txt...")
+print("----------- Word Count ----------")
+print(word_count)
