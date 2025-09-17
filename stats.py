@@ -9,8 +9,7 @@ def num_of_characters(text_from_book):
     character_count = {}
     words = text_from_book.lower()
     for character in words:
-        check = character in character_count
-        if check == True:
+        if character in character_count:
             character_count[character] += 1
         else:
             character_count[character] = 1
