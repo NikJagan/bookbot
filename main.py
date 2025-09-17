@@ -1,4 +1,4 @@
-from stats import num_of_words
+from stats import *
 
 def get_book_text(path_to_file):
     with open(path_to_file) as f:
@@ -8,6 +8,7 @@ def get_book_text(path_to_file):
 def main(x):
     y = get_book_text(x)
     z = num_of_words(y)
+    a = num_of_characters(y)
 
 main("/home/neonik21/workspace/github.com/NikJagan/bookbot/books/frankenstein.txt")
 
